@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     "debug_toolbar",
     # Local
     "users",
-    #'pages',
+    "pages",
 ]
 
 MIDDLEWARE = [
@@ -63,10 +63,13 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "config.urls"
 
+# TEMPLATES
+# ------------------------------------------------------------------------------
+# https://docs.djangoproject.com/en/dev/ref/settings/#templates
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": ["templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
